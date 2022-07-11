@@ -12,15 +12,16 @@ function App() {
 
   return (
     <div className="App">
-      <FormContainer/>
+      {/* <FormContainer/> */}
+      <LoginPage/>
 
-      {/* <BrowserRouter>
+      <BrowserRouter>
       <Routes>
-        <Route path='/login' element={LoginPage}/>
-        <Route path='/register' element={RegisterPage}/>
+        <Route path='/sign-in' element={LoginPage}/>
+        <Route path='/sign-up' element={RegisterPage}/>
 
       </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </div>
   );
 }

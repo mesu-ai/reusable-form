@@ -5,9 +5,9 @@ const Input = (props) => {
     const { label, name, type, ...rest } = props;
     return (
         <div>
-            <label className='block text-start' htmlFor={name}>{label}</label>
+            <label className='block text-start text-lg' htmlFor={name}>{label}</label>
             <Field
-                className='w-full px-2 py-1 rounded-lg'
+                className='w-full px-2 py-2 rounded-lg border-2 border-mercury'
                 id={name}
                 name={name}
                 type={type}
