@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form } from 'formik';
-import * as Yup from 'yup';
 import FormControl from '../../components/FormConiner/FormControl/FormControl';
+import { validationSchema } from '../../components/FormConiner/validation/validationSchema';
 
 
 const LoginPage = () => {
@@ -10,11 +10,7 @@ const LoginPage = () => {
 		email: '',
 	};
 
-	const validationSchema = Yup.object({
-		name: Yup.string().required('Enter your name !'),
-		email: Yup.string().email('invalid email !').required('Enter your email !'),
-	});
-
+	
 	const onSubmit = (values) => {
 		console.log(values);
 	};
@@ -43,7 +39,7 @@ const LoginPage = () => {
 
 						<p className="text-xl">
 							Have not any account?
-							<span className="font-bold">Register</span>
+							<span className="font-bold ml-1">Register</span>
 						</p>
 					</div>
 				</div>
